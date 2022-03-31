@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(113, 214, 240);
+   
+}
+
+.card{
+    border-radius: 2rem;
+    background-color: rgb(10, 173, 238);
+}
+
+.fas {
+    width: 1.3em !important;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .inf {
+      display: block !important;
+    }
+    .display-1 {
+      font-size: 3rem;
+    }
+  }
+
+ 
+  
+  .footer-basic {
+    
+    background-color:#ffffff;
+    color:#4b4c4d;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+
+
+
