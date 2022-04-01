@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 app.get('/', (req, res) => {
-  res.render('index.ejs', {data: ''});
+  res.render('index', {data: ''});
 })
 
 app.post('/', (req, res) => {
@@ -26,10 +26,10 @@ app.post('/', (req, res) => {
     if (response.statusCode === 200) {
       response.on("data", (data) => {
         const weatherData = JSON.parse(data);
-        res.render('index.ejs', {data: weatherData});
+        res.render('index', {data: weatherData});
       })
     } else {
-      res.render('index.ejs', {data: "0"})
+      res.render('index', {data: "0"})
     }
   })
 })
