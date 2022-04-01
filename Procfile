@@ -1,1 +1,1 @@
-web: node guestbook.js
+web: node app.js
